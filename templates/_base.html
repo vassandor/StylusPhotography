@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock title %}</title>
+</head>
+<body>
+    <h1>PHOTOGRAPHICA</h1>
+
+    <h3>Ha már unod az egyforma képeket...</h3>
+
+    {% include "_menu.html" %}
+
+    <hr>
+
+    {% block body %}
+    {% endblock body %}
+
+    <hr>
+
+    <h3>Footer...</h3>
+</body>
+</html>
