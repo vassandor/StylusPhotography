@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{% block title %}{% endblock title %}</title>
+    <title>Stylus Photography: {% block title %}{% endblock title %}</title>
 </head>
 <body>
     <h1>PHOTOGRAPHICA</h1>
@@ -14,10 +14,14 @@
     <hr>
 
     {% block body %}
+        <p>Üres oldal</p>
     {% endblock body %}
 
     <hr>
 
-    <h3>Footer...</h3>
+    {% block footer %}
+        <h3>PHOTOGRAPHICA</h3>
+        <p>Ez egy footer...</p>
+    {% endblock footer %}
 </body>
 </html>

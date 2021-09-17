@@ -1,20 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Stylus Photography: Gallery</title>
-</head>
-<body>
-    {% include "_header.html" %}
-
-    {% include "_menu.html" %}
-
-    <hr>
+{% extends "_base.html" %}
+{% block title %}Gallery{% endblock title %}
+{% block body %}
 
     <h2>Gallery</h2>
 
-    <img src="https://source.unsplash.com/400x300/?office,laptop1" alt="Missing Image">
-    <img src="https://source.unsplash.com/400x300/?office,laptop2" alt="Missing Image">
-    <img src="https://source.unsplash.com/400x300/?office,laptop3" alt="Missing Image">
-</body>
-</html>
+    <img src="https://source.unsplash.com/400x300/?gaming,laptop1" alt="A kép nem található">
+
+    <img src="https://source.unsplash.com/400x300/?gaming,laptop2" alt="A kép nem található">
+
+    <img src="https://source.unsplash.com/400x300/?gaming,laptop3" alt="A kép nem található">
+
+    <img src="https://source.unsplash.com/400x300/?gaming,laptop4" alt="A kép nem található">
+
+{% endblock body %}
+
+{% block footer %}
+    <h3>PHOTOGRAPHICA</h3>
+    <p>És ez is footer...</p>
+{% endblock footer %}
