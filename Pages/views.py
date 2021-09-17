@@ -3,13 +3,13 @@ from django.shortcuts import render, HttpResponse
 # Create your views here.
 
 def home_page(request):
-    return HttpResponse("<h1>Stylus Photography: Home</h1>")
+    return render(request, "home.html")
 
 def contact_page(request):
-    return HttpResponse("<h1>Stylus Photography: Contact</h1>")
+    return render(request, "contact.html")
 
 def about_page(request):
-    return HttpResponse("<h1>Stylus Photography: About</h1>")
+    return render(request, "about.html")
 
 def gallery_page(request):
-    return HttpResponse("<h1>Stylus Photography: Gallery</h1>")
+    return render(request, "gallery.html")
