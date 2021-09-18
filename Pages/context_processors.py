@@ -5,7 +5,7 @@ def global_context(request):
         "phone": "+36-70-369-6077",
         "email": "szmatefy@gmail.com",
         "instagram": "https://www.instagram.com/stylus.photo/",
-        "facebook": "https://www.facebook.com/MatefyPhoto/",
+        "facebook": "https://www.facebook.com/stylusphoto/",
         "company": "Visual Workshop Bt.",
         "town": "Budapest, Hungary"
     }

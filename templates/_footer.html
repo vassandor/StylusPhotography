@@ -3,7 +3,7 @@
         <div class="footer-columns">
             {% block footer %}
                 <div>
-                    <p>{{ page_title }}</p>
+                    <h3>{{ page_title }}</h3>
                 </div>
                 <div>
                     <small>Cím</small>
@@ -16,8 +16,10 @@
                 </div>
                 <div>
                     <small>Kövess!</small>
-                    <p>{{ instagram }}</p>
-                    <p>{{ facebook }}</p>
+                    <div class="icon">
+                        <a href={{ instagram }}><i class="fab fa-instagram"></i></a>
+                        <a href={{ facebook }}><i class="fab fa-facebook-square"></i></a>
+                    </div>
                 </div>
             {% endblock footer %}
         </div>
