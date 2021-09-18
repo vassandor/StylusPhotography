@@ -4,13 +4,11 @@
 
     <h2>Gallery</h2>
 
-    <img src="https://source.unsplash.com/400x300/?gaming,laptop1" alt="A kép nem található">
-
-    <img src="https://source.unsplash.com/400x300/?gaming,laptop2" alt="A kép nem található">
-
-    <img src="https://source.unsplash.com/400x300/?gaming,laptop3" alt="A kép nem található">
-
-    <img src="https://source.unsplash.com/400x300/?gaming,laptop4" alt="A kép nem található">
+    <div class="gallery">
+        {% for data in images %}
+            <img src="{{ data.image }}" alt="Data error" class="image">
+        {% endfor %}
+    </div>
 
 {% endblock body %}
 

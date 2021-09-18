@@ -12,7 +12,7 @@ body{
 }
 
 .content{
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     display: inherit;
     grid-template-columns: inherit;
