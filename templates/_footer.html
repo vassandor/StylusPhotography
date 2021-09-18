@@ -3,21 +3,21 @@
         <div class="footer-columns">
             {% block footer %}
                 <div>
-                    <p>Stylus Photography</p>
+                    <p>{{ page_title }}</p>
                 </div>
                 <div>
-                    <p>Cím</p>
-                    <p>Visual Workshop Bt.<br>Budapest, Hungary</p>
+                    <small>Cím</small>
+                    <p>{{ company }}<br>{{ town }}</p>
                 </div>
                 <div>
-                    <p>Elérhetőség</p>
-                    <p>snvas15@gmail.com</p>
-                    <p>+36-30/540-2941</p>
+                    <small>Elérhetőség</small>
+                    <p>{{ email }}</p>
+                    <p>{{ phone }}</p>
                 </div>
                 <div>
-                    <p>Kövess!</p>
-                    <p>Instagram...</p>
-                    <p>Facebook...</p>
+                    <small>Kövess!</small>
+                    <p>{{ instagram }}</p>
+                    <p>{{ facebook }}</p>
                 </div>
             {% endblock footer %}
         </div>
