@@ -1,4 +1,12 @@
-h1{
-    color: dimgrey;
-    font-size: 50px;
+body{
+    background-color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+}
+
+.menu{
+    background-color: dimgrey;
+}
+
+.menu-link{
+    color: white;
 }
