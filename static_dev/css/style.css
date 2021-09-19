@@ -1,6 +1,8 @@
 @import "menu.css";
 @import "footer.css";
 @import "gallery.css";
+@import "contact.css";
+
 *{
     margin: 0;
     padding: 0;

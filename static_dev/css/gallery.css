@@ -19,13 +19,14 @@
     background-color: white;
     color: dimgrey;
     border: 1px solid rgba( 0, 0, 0, 0.1);
+    border-radius: 10px;
     position: sticky;
     top: 50px;
 }
 
 .menu p{
     cursor: pointer;
-    margin: 5px;
+    margin: 9px;
 }
 
 .menu p:hover{

@@ -3,19 +3,22 @@
         <div class="footer-columns">
             {% block footer %}
                 <div>
-                    <h3>{{ page_title }}</h3>
+                    <h3>{{ page_title|upper }}</h3>
                 </div>
                 <div>
                     <small>Cím</small>
+                    <hr>
                     <p>{{ company }}<br>{{ town }}</p>
                 </div>
                 <div>
                     <small>Elérhetőség</small>
+                    <hr>
                     <p>{{ email }}</p>
                     <p>{{ phone }}</p>
                 </div>
                 <div>
                     <small>Kövess!</small>
+                    <hr>
                     <div class="icon">
                         <a href={{ instagram }}><i class="fab fa-instagram"></i></a>
                         <a href={{ facebook }}><i class="fab fa-facebook-square"></i></a>

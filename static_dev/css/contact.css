@@ -1,0 +1,34 @@
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+input, textarea{
+    margin: 10px;
+    border: 1px solid rgba( 0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 10px;
+    font: inherit;
+}
+
+textarea{
+    resize: none;
+}
+
+button{
+    width: 100px;
+    margin: 10px;
+    border: 1px solid rgba( 0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 10px;
+    font: inherit;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+button:hover{
+    background-color: dimgrey;
+    transition: background-color 0.5s;
+    color: whitesmoke;
+}
