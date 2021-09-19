@@ -2,6 +2,8 @@
     background-color: dimgrey;
     padding: 10px;
     margin-bottom: 20px;
+    position: sticky;
+    top: 0;
 }
 
 .menu-link{
