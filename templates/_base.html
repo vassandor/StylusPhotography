@@ -11,14 +11,16 @@
     <script src="https://kit.fontawesome.com/74f7ef6948.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    {% include "_header.html" %}
+    <div>
+        {% include "_header.html" %}
 
-    {% include "_menu.html" %}
+        {% include "_menu.html" %}
 
-    <div class="content">
-        {% block body %}
-            <p>Üres oldal</p>
-        {% endblock body %}
+        <div class="content">
+            {% block body %}
+                <p>Üres oldal</p>
+            {% endblock body %}
+        </div>
     </div>
 
     {% include "_footer.html" %}
