@@ -1,8 +1,8 @@
 <div class="menu">
     <div class="content">
-        <a class="menu-link" href="/">Home</a>
-        <a class="menu-link" href="/about/">About</a>
-        <a class="menu-link" href="/contact/">Contact</a>
-        <a class="menu-link" href="/gallery/">Gallery</a>
+        <a class="menu-link {% if request.path == '/' %}active{% endif %}" href="/">Home</a>
+        <a class="menu-link {% if request.path == '/about/' %}active{% endif %}" href="/about/">About</a>
+        <a class="menu-link {% if request.path == '/contact/' %}active{% endif %}" href="/contact/">Contact</a>
+        <a class="menu-link {% if request.path == '/gallery/' %}active{% endif %}" href="/gallery/">Gallery</a>
     </div>
 </div>
