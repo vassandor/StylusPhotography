@@ -3,10 +3,22 @@
 {% block body %}
 
     <div class="gallery">
-        {% for data in images %}
-            <img src="{{ data.image }}" alt="Data error" class="image">
-        {% endfor %}
+        <div class="images">
+            {% for data in images %}
+                <img src="{{ data.image }}" alt="Data error" class="image">
+            {% endfor %}
+        </div>
+
+        <div>
+            <div class="menu">
+                <p>Nature</p>
+                <p>Sport</p>
+                <p>Wedding</p>
+                <p>Gaming</p>
+            </div>
+        </div>
     </div>
+
 
 {% endblock body %}
 

@@ -1,5 +1,11 @@
 .gallery{
     display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto 150px;
+}
+
+.images{
+    display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-gap: 10px;
 }
@@ -7,4 +13,22 @@
 .image{
     width: 100%;
     border-radius: 10px;
+}
+
+.gallery .menu{
+    background-color: white;
+    color: dimgrey;
+    border: 1px solid rgba( 0, 0, 0, 0.1);
+    position: sticky;
+    top: 50px;
+}
+
+.menu p{
+    cursor: pointer;
+    margin: 5px;
+}
+
+.menu p:hover{
+    color: black;
+    font-weight: bold;
 }
