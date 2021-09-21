@@ -1,16 +1,22 @@
 from django.shortcuts import render, HttpResponse
 from utilities.data_gen import create_photo_list
+from django.views.generic import TemplateView
 
 # Create your views here.
 
-def home_page(request):
-    return render(request, "home.html")
+class HomeView(TemplateView):
+    template_name = "home.html"
 
-def contact_page(request):
-    return render(request, "contact.html")
+class ContactView(TemplateView):
+    template_name = "contact.html"
 
-def about_page(request):
-    return render(request, "about.html")
+class AboutView(TemplateView):
+    template_name = "about.html"
 
-def gallery_page(request):
-    return render(request, "gallery.html", {"images": create_photo_list(10)})
+class GalleryView(TemplateView):
+    template_name = "gallery.html"
+    
+    def get_context_data(self, **kwargs):
+        context = super(GalleryView, self).get_context_data(**kwargs)
+        context["images"] = create_photo_list(21)
+        return context
