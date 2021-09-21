@@ -1,4 +1,3 @@
-from django.shortcuts import render, HttpResponse
 from utilities.data_gen import create_photo_list
 from django.views.generic import TemplateView
 
