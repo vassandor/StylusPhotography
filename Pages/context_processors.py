@@ -7,5 +7,5 @@ def global_context(request):
         "instagram": "https://www.instagram.com/stylus.photo/",
         "facebook": "https://www.facebook.com/stylusphoto/",
         "company": "Visual Workshop Bt.",
-        "town": "Budapest, Hungary"
+        "address": "Budapest, Hungary"
     }
