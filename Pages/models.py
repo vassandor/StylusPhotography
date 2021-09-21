@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 
-class MyPage(models.Model):
+class PageInfo(models.Model):
     title = models.CharField(max_length=200)
     subtitle = models.CharField(max_length=200)
     company = models.CharField(max_length=200)
