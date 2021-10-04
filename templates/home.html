@@ -1,15 +1,8 @@
 {% extends "_base.html" %}
 {% block title %}Home{% endblock title %}
 {% block body %}
-
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat officiis perferendis quibusdam ratione. Aperiam atque consectetur debitis delectus dignissimos praesentium quas quibusdam repudiandae sint sit!</p>
-
-    <h3>Lorem ipsum dolor sit amet.</h3>
-
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error excepturi in magni molestias nesciunt ratione, vitae. Aliquam ipsum laboriosam nobis soluta tempora! Accusantium cumque dolor eaque, excepturi id ipsa laudantium magnam modi necessitatibus nemo nihil obcaecati, praesentium quo rerum ullam! Asperiores at dolorem error exercitationem illum iste libero magnam maiores nesciunt, perspiciatis possimus quae quidem quos recusandae reiciendis repellendus reprehenderit repudiandae ullam. Amet animi architecto atque autem distinctio dolores ea eveniet fugiat in ipsam itaque magnam mollitia nam nesciunt nihil, nulla obcaecati, officiis quasi quia quibusdam quos reprehenderit saepe similique soluta tempora ullam veniam? Cupiditate harum laudantium pariatur similique vitae?</p>
-
-    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
-
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dolor ducimus fugiat impedit inventore nam, nesciunt omnis optio pariatur praesentium quasi, quidem ratione rem similique ullam velit veniam vitae. Aliquam autem consectetur eaque, fugit mollitia natus nemo omnis, pariatur quas recusandae repellat sit voluptatem voluptatibus! A ab aliquid aperiam consequatur consequuntur, debitis delectus dicta dolor dolores doloribus ducimus eaque eveniet exercitationem hic illum magnam magni mollitia nisi nobis nostrum obcaecati optio pariatur porro praesentium quaerat quam quasi qui quis recusandae repellendus saepe sit suscipit vel vitae voluptas voluptatem voluptatum. Accusamus delectus, dolorum id neque quasi rerum tempora voluptas? Alias asperiores deleniti et ex fugit ipsam laborum minus molestiae mollitia omnis, repudiandae tempore vel veniam! Aliquid aspernatur consequuntur impedit ipsam non perspiciatis provident rem voluptates? Aliquam aut commodi consectetur consequatur, consequuntur dolor enim fugiat harum illum ipsa molestias natus nemo nostrum quibusdam reiciendis? Commodi enim, eveniet fugit laudantium necessitatibus optio possimus rem sunt tenetur? Autem est molestiae quam quasi quidem sed. Corporis cupiditate error est maxime unde. Accusantium eius impedit optio similique. Animi, assumenda at corporis dicta dolore earum, eos id natus quia sed tenetur unde vitae, voluptas. At dicta dolore ipsa iusto mollitia nesciunt nobis officia quidem, repellat ullam veritatis!</p>
-
+    <h2>{{ data.title }}</h2>
+    <h3>{{ data.subtitle }}</h3>
+    <p>{{ data.content }}</p>
+    <img src="{{ photo }}" alt="Image error">
 {% endblock body %}
