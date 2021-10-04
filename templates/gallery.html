@@ -11,10 +11,9 @@
 
         <div>
             <div class="menu">
-                <p>Természet</p>
-                <p>Sport</p>
-                <p>Esküvő</p>
-                <p>Gaming</p>
+                {% for category in categories %}
+                    <p>{{ category }}</p>
+                {% endfor %}
             </div>
         </div>
     </div>
