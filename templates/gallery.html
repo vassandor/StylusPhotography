@@ -12,7 +12,7 @@
         <div>
             <div class="menu">
                 {% for category in categories %}
-                    <p>{{ category }}</p>
+                    <p>{{ category.title }}</p>
                 {% endfor %}
             </div>
         </div>
@@ -22,6 +22,4 @@
 {% endblock body %}
 
 {% block footer %}
-    <h3>PHOTOGRAPHICA</h3>
-    <p>És ez is footer...</p>
 {% endblock footer %}
