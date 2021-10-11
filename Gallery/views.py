@@ -13,5 +13,7 @@ class GalleryView(TemplateView):
         context["categories"] = Category.objects.all()
         return context
 
-class PhotoDetailView(TemplateView):
+class PhotoDetailView(DetailView):
     template_name = "photo_details.html"
+    model = Photo
+    context_object_name = "photo"

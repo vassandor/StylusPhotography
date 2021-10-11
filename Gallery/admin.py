@@ -5,7 +5,7 @@ from .models import Category, Photo
 admin.site.register(Category)
 
 class PhotoModelAdmin(admin.ModelAdmin):
-    list_display = ["title", "category", "homepage", "image"]
+    list_display = ["title", "category", "homepage", "slug", "image"]
     list_editable = ["homepage"]
     list_filter = ["category"]
     search_fields = ["title"]

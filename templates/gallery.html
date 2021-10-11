@@ -5,7 +5,7 @@
     <div class="gallery">
         <div class="images">
             {% for photo in images %}
-                <a href="/gallery/{{ photo.slug }}"><img src="{{ photo.image.url }}" alt="Data error" class="image"></a>
+                <a href="/gallery/{{ photo.slug }}"><img src="{{ photo.image.url }}" alt="{{ photo.title }}" class="image"></a>
             {% endfor %}
         </div>
 

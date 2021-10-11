@@ -1,5 +1,7 @@
+import random
 from django.views.generic import TemplateView
 from .models import HomePage, AboutPage
+from Gallery.models import Photo
 # Create your views here.
 
 class HomeView(TemplateView):
@@ -13,7 +15,10 @@ class HomeView(TemplateView):
             return context
 
         context["data"] = home_data_list[0]
-        context["photo"] = "https://source.unsplash.com/700x500/?gaming,laptop"
+
+        homepage_photo_list = Photo.objects.filter(homepage=True)
+        if homepage_photo_list:
+            context["photo"] = random.choice(homepage_photo_list)
         return context
 
 class ContactView(TemplateView):

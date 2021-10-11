@@ -4,14 +4,14 @@
 
 {% block body %}
     <div class="details">
-        <img src="https://source.unsplash.com/1200x900/?gaming,laptop" alt="Data error">
+        <img src="{{photo.image.url}}" alt="{{ photo.title }}">
 
         <div>
             <div class="description">
-                <h1>Kép címe</h1>
-                <small>2021.09.21.</small>
+                <h1>{{ photo.title }}</h1>
+                <small>{{ photo.uploaded }}</small>
                 <hr>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet cumque est explicabo harum illum maiores placeat soluta veniam? Accusantium, dolores.</p>
+                <p>{{ photo.description }}</p>
             </div>
         </div>
     </div>

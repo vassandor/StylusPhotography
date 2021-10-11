@@ -1,4 +1,6 @@
 import os
+import time
+
 from PIL import Image
 from django.db import models
 from django.utils.text import slugify
@@ -57,7 +59,10 @@ class Photo(models.Model):
 
 def slug_generator(sender, instance, **kwargs):
     if not instance.slug:
-        instance.slug = slugify(instance.title)
+        slug = f"{slugify(instance.category)}-{slugify(instance.title)}"
+        if Photo.objects.filter(slug=slug).exists():
+            slug += f"-{int(time.time())}"
+        instance.slug = slug
 
 pre_save.connect(slug_generator, sender=Photo)
 

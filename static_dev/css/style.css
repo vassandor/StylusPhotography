@@ -3,6 +3,7 @@
 @import "gallery.css";
 @import "contact.css";
 @import "photo_details.css";
+@import "home.css";
 
 *{
     margin: 0;
