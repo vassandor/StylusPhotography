@@ -1,10 +1,9 @@
 {% extends "_base.html" %}
 {% block title %}Gallery{% endblock title %}
 {% block body %}
-
     <div class="gallery">
         <div class="images">
-            {% for photo in images %}
+            {% for photo in photos %}
                 <a href="/gallery/{{ photo.slug }}"><img src="{{ photo.image.url }}" alt="{{ photo.title }}" class="image"></a>
             {% endfor %}
         </div>

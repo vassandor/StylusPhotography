@@ -24,17 +24,17 @@
     top: 50px;
 }
 
-.menu p{
+.gallery .menu p{
     cursor: pointer;
     margin: 9px;
 }
 
-.menu a{
+.gallery .menu a{
     text-decoration: none;
     color: dimgrey;
 }
 
-.menu p:hover{
+.gallery .menu p:hover{
     color: black;
     font-weight: bold;
 }
