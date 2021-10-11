@@ -1,7 +1,8 @@
 import random
-from django.views.generic import TemplateView
+from django.views.generic import TemplateView, FormView
 from .models import HomePage, AboutPage
 from Gallery.models import Photo
+from .forms import ContactForm
 # Create your views here.
 
 class HomeView(TemplateView):
@@ -21,8 +22,10 @@ class HomeView(TemplateView):
             context["photo"] = random.choice(homepage_photo_list)
         return context
 
-class ContactView(TemplateView):
+class ContactView(FormView):
     template_name = "contact.html"
+    form_class = ContactForm
+
 
 class AboutView(TemplateView):
     template_name = "about.html"

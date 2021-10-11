@@ -4,9 +4,7 @@
 
     <form method="post" class="contact-form">
         {% csrf_token %}
-        <input type="text" placeholder="Név">
-        <input type="email" placeholder="Email">
-        <textarea name="" id="" cols="30" rows="10" placeholder="Üzenet...."></textarea>
+        {{ form }}
         <button>Küldés</button>
     </form>
 
