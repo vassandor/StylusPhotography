@@ -22,7 +22,7 @@ def image_dir_path(instance, filename):
 class Photo(models.Model):
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
     homepage = models.BooleanField(default=False)
-    title = models.CharField(max_length=200, blank=True)
+    title = models.CharField(max_length=200)
     slug = models.SlugField(max_length=200, blank=True, editable=False)
     image = models.ImageField(upload_to=image_dir_path)
     description = models.TextField(max_length=2000, blank=True)
