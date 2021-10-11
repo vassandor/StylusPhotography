@@ -34,6 +34,11 @@
     color: dimgrey;
 }
 
+.gallery .menu a.active{
+    color: black;
+    font-weight: bold;
+}
+
 .gallery .menu p:hover{
     color: black;
     font-weight: bold;
