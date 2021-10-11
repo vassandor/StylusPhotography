@@ -11,8 +11,9 @@
 
         <div>
             <div class="menu">
+                <a href="/gallery/"><p>Összes</p></a>
                 {% for category in categories %}
-                    <p>{{ category.title }}</p>
+                    <a href="/gallery/?category={{ category.title }}"><p>{{ category.title }}</p></a>
                 {% endfor %}
             </div>
         </div>

@@ -29,6 +29,11 @@
     margin: 9px;
 }
 
+.menu a{
+    text-decoration: none;
+    color: dimgrey;
+}
+
 .menu p:hover{
     color: black;
     font-weight: bold;
