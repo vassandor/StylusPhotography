@@ -53,7 +53,7 @@ class Photo(models.Model):
         verbose_name_plural = "Képek"
 
     def __str__(self):
-        return self.title
+        return self.title if self.title else self.image.name
 
 def slug_generator(sender, instance, **kwargs):
     if not instance.slug:
