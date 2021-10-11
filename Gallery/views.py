@@ -1,14 +1,14 @@
 # Create your views here.
 from django.views.generic import TemplateView, DetailView
 from utilities.data_gen import create_photo_list
-from .models import Category
+from .models import Category, Photo
 
 class GalleryView(TemplateView):
     template_name = "gallery.html"
 
     def get_context_data(self, **kwargs):
         context = super(GalleryView, self).get_context_data(**kwargs)
-        context["images"] = create_photo_list(24)
+        context["images"] = Photo.objects.all()
 
         context["categories"] = Category.objects.all()
         return context
