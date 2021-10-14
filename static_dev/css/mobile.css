@@ -1,0 +1,54 @@
+/*Mobile Styles*/
+@media only screen and (max-width: 400px) {
+    body{
+        background-color: burlywood;
+    }
+
+    .content{
+        margin: 10px;
+    }
+
+    .footer-columns{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer{
+        padding: 5px;
+    }
+}
+
+/*Tablet Styles*/
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    body{
+        background-color: palegreen;
+    }
+
+    .content{
+        margin: 10px;
+    }
+
+    .header{
+        margin: 10px!important;
+    }
+
+    .footer-columns{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/*Desktop Styles*/
+@media only screen and (min-width: 961px) {
+    body{
+        background-color: aquamarine;
+    }
+}
