@@ -3,6 +3,7 @@ from django.views.generic import TemplateView, FormView
 from .models import HomePage, AboutPage
 from Gallery.models import Photo
 from .forms import ContactForm
+from django.core.mail import send_mail
 # Create your views here.
 
 class HomeView(TemplateView):
@@ -31,9 +32,9 @@ class ContactView(FormView):
         name = form.data["name"]
         email = form.data["email"]
         message = form.data["message"]
-        print("Név:", name)
-        print("Email:", email)
-        print("Üzenet:", message)
+        email_message = f'Név: {name}\n\n'
+        email_message += message
+        send_mail('Contact', email_message, email, ['snvas15@gmail.com'], fail_silently=False)
         return super(ContactView, self).form_valid(form)
 
 class ContactSentView(TemplateView):
