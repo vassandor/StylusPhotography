@@ -2,6 +2,10 @@
 {% block title %}Gallery{% endblock title %}
 {% block body %}
     <div class="gallery">
+        <div class="mobile-menu">
+            {% include "_category_menu.html" %}
+        </div>
+
         <div class="images">
             {% for photo in photos %}
                 <a href="/gallery/{{ photo.slug }}">
@@ -10,13 +14,8 @@
             {% endfor %}
         </div>
 
-        <div>
-            <div class="menu">
-                <a href="/gallery/" {% if request.GET.category == None %}class="active"{% endif %}><p>Összes</p></a>
-                {% for category in categories %}
-                    <a href="/gallery/?category={{ category.title }}" {% if request.GET.category == category.title %}class="active"{% endif %}><p>{{ category.title }}</p></a>
-                {% endfor %}
-            </div>
+        <div class="desktop-menu">
+            {% include "_category_menu.html" %}
         </div>
     </div>
 

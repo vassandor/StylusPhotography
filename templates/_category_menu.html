@@ -1,0 +1,6 @@
+<div class="menu">
+    <a href="/gallery/" {% if request.GET.category == None %}class="active"{% endif %}><p>Összes</p></a>
+    {% for category in categories %}
+        <a href="/gallery/?category={{ category.title }}" {% if request.GET.category == category.title %}class="active"{% endif %}><p>{{ category.title }}</p></a>
+    {% endfor %}
+</div>
