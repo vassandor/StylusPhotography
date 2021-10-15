@@ -1,5 +1,5 @@
 /*Mobile Styles*/
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 525px) {
     /*body{
         background-color: burlywood;
     }*/
@@ -69,7 +69,7 @@
 }
 
 /*Tablet Styles*/
-@media only screen and (min-width: 401px) and (max-width: 960px) {
+@media only screen and (min-width: 526px) and (max-width: 849px) {
     /*body{
         background-color: palegreen;
     }*/
@@ -80,12 +80,21 @@
     }
 
     .header{
-        margin: 10px!important;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
     }
 
     .footer-columns{
         display: flex;
         flex-direction: column;
+    }
+
+    #menu{
+        padding: 5px;
+        text-align: center;
     }
 
     .gallery{
@@ -95,7 +104,7 @@
 
     .category-menu{
         position: sticky;
-        top: 69px;
+        top: 49px;
         order: -1;
     }
 
@@ -115,7 +124,7 @@
 }
 
 /*Desktop Styles*/
-@media only screen and (min-width: 961px) {
+@media only screen and (min-width: 850px) {
     /*body{
         background-color: aquamarine;
     }*/
