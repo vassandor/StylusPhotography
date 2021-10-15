@@ -2,9 +2,6 @@
 {% block title %}Gallery{% endblock title %}
 {% block body %}
     <div class="gallery">
-        <div class="mobile-menu">
-            {% include "_category_menu.html" %}
-        </div>
 
         <div class="images">
             {% for photo in photos %}
@@ -14,7 +11,7 @@
             {% endfor %}
         </div>
 
-        <div class="desktop-menu">
+        <div class="category-menu">
             {% include "_category_menu.html" %}
         </div>
     </div>

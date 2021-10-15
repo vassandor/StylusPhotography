@@ -34,23 +34,24 @@
         flex-direction: column;
     }
 
-    .desktop-menu{
-        display: none;
-    }
-
-    .mobile-menu{
+    .category-menu{
         position: sticky;
         top: 88px;
+        order: -1;
     }
 
     .gallery .menu{
-        border-radius: 0;
         display: flex;
         justify-content: center;
     }
 
     .gallery .menu p{
         margin: 0 5px;
+    }
+
+    .details{
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -79,23 +80,24 @@
         flex-direction: column;
     }
 
-    .desktop-menu{
-        display: none;
-    }
-
-    .mobile-menu{
+    .category-menu{
         position: sticky;
         top: 69px;
+        order: -1;
     }
 
     .gallery .menu{
-        border-radius: 0;
         display: flex;
         justify-content: center;
     }
 
     .gallery .menu p{
-        margin: 0 5px;
+        margin: 0 10px;
+    }
+
+    .details{
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -105,7 +107,5 @@
         background-color: aquamarine;
     }*/
 
-    .mobile-menu{
-        display: none;
-    }
+
 }
