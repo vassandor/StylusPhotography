@@ -54,6 +54,11 @@
         flex-direction: column;
     }
 
+    #nav-menu{
+        flex-direction: column;
+        margin: 0;
+    }
+
     .mobile-menu-button{
         display: inherit;
     }

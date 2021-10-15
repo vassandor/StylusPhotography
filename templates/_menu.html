@@ -1,10 +1,9 @@
-<div class="menu">
-    <div class="content">
+<div class="menu" id="menu">
+    <i class="fas fa-bars menu-link mobile-menu-button" onclick="open_menu()"></i>
+    <div class="content" id="nav-menu">
         <a class="menu-link {% if request.path == '/' %}active{% endif %}" href="/">Főoldal</a>
         <a class="menu-link {% if request.path == '/gallery/' %}active{% endif %}" href="/gallery/">Galéria</a>
         <a class="menu-link {% if request.path == '/about/' %}active{% endif %}" href="/about/">Rólunk</a>
         <a class="menu-link {% if request.path == '/contact/' %}active{% endif %}" href="/contact/">Kapcsolat</a>
     </div>
-
-    <i class="fas fa-bars menu-link mobile-menu-button"></i>
 </div>
