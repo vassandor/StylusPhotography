@@ -36,7 +36,7 @@
 
     .category-menu{
         position: sticky;
-        top: 88px;
+        top: 60px;
         order: -1;
     }
 
@@ -52,6 +52,14 @@
     .details{
         display: flex;
         flex-direction: column;
+    }
+
+    .mobile-menu-button{
+        display: inherit;
+    }
+
+    .menu .content{
+        display: none;
     }
 }
 
@@ -106,6 +114,5 @@
     /*body{
         background-color: aquamarine;
     }*/
-
 
 }
