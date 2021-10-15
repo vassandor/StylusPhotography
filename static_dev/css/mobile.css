@@ -37,6 +37,21 @@
     .desktop-menu{
         display: none;
     }
+
+    .mobile-menu{
+        position: sticky;
+        top: 88px;
+    }
+
+    .gallery .menu{
+        border-radius: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .gallery .menu p{
+        margin: 0 5px;
+    }
 }
 
 /*Tablet Styles*/
@@ -69,7 +84,18 @@
     }
 
     .mobile-menu{
+        position: sticky;
+        top: 69px;
+    }
 
+    .gallery .menu{
+        border-radius: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .gallery .menu p{
+        margin: 0 5px;
     }
 }
 
